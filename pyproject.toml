@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enahaplots"
+version = "1.0.0"
+description = "A personal Python visualization library with themed charts and statistical analysis"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Enaha", email = "enaha@example.com"}
+]
+keywords = ["visualization", "plotting", "charts", "matplotlib", "data-science", "statistics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib>=3.5.0",
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/enaha/enahaplots"
+Repository = "https://github.com/enaha/enahaplots"
+Documentation = "https://github.com/enaha/enahaplots#readme"
+
+[tool.setuptools]
+packages = ["enahaplots"]
+package-dir = {"" = "."}
+
+[tool.setuptools.package-data]
+enahaplots = ["*.py"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
