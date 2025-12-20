@@ -20,7 +20,7 @@ A personal Python visualization library with beautiful themed charts and built-i
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOURUSERNAME/enahaplots.git
+git clone git@github.com:enaha76/enahaplots.git
 cd enahaplots
 
 # Install the library
