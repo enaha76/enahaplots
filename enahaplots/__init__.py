@@ -73,4 +73,5 @@ __all__ = [
     'calculate_statistics',
     'moving_average',
     'normalize',
+    'styled_map',
 ]
